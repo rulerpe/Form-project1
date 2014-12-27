@@ -1,9 +1,0 @@
-def create
-	@user = User.new(:username => params[:username], :email=>params[:email],:password => parmas[:password])
-
-	if @user.save
-		redirect_to new-_user_path
-	else
-		render :new
-	end
-end
